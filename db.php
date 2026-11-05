@@ -2,7 +2,7 @@
 $host = "localhost";
 $user = "root";
 $pass = "";
-$dbname = "smart_campus";
+$dbname = "complaint_db";
 
 $conn = new mysqli($host, $user, $pass, $dbname);
 
