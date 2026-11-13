@@ -1,37 +1,41 @@
-# Smart Campus Complaint & Maintenance Portal
+# Smart Campus: Student Complaint & Maintenance Redressal Portal
 
-A lightweight, web-based campus maintenance tracking system built with **PHP** and **MySQL**, designed for students to easily lodge infrastructure complaints and for administrators to manage and resolve them efficiently.
-
----
-
-## 🚀 Features
-
-* **Student Portal (`index.php`)**:
-  * Lodge campus complaints with student name, hostel/room location, defect category, and detailed issue descriptions.
-  * Real-time live tracking of submitted tickets and their statuses (`Pending`, `In Progress`, `Resolved`).
-* **Admin Dashboard (`admin.php`)**:
-  * View all submitted campus tickets in one centralized table.
-  * Update ticket statuses dynamically to keep students informed.
-* **Responsive UI**: Clean, modern card-based interface styled for fast navigation and ease of use.
+A lightweight, web-based complaint lodging and tracking system designed for campus hostels and department infrastructure. Students can report maintenance issues across various categories, and campus administrators can track and transition ticket resolution states in real time.
 
 ---
 
-## 🛠️ Tech Stack
+## Project URLs & Quick Links
 
-* **Backend**: PHP (MySQLi)
-* **Database**: MySQL (via XAMPP / phpMyAdmin)
-* **Frontend**: HTML5, CSS3, JavaScript
+Once your local Apache server (XAMPP/WAMP) is running, access the portal via these local links:
+
+* **Student Portal (Submit & Track Complaints):**  
+  [http://localhost/smart-campus/index.php](http://localhost/smart-campus/index.php)
+
+* **Admin Maintenance Control Center:**  
+  [http://localhost/smart-campus/admin.php](http://localhost/smart-campus/admin.php)
+
+* **Local Database Manager (phpMyAdmin):**  
+  [http://localhost/phpmyadmin](http://localhost/phpmyadmin)
 
 ---
 
-## ⚙️ Prerequisites & Setup Guide
+## Tech Stack
 
-To run this project locally on your machine, follow these steps:
+* **Frontend:** Semantic HTML5, Minimal CSS3, Vanilla JavaScript (ES6 client-side validation)
+* **Backend:** PHP (Prepared Statements via MySQLi)
+* **Database:** MySQL
 
-### 1. Install XAMPP
-Ensure you have [XAMPP](https://www.apachefriends.org/index.html) installed with **Apache** and **MySQL** services available.
+---
 
-### 2. Clone or Place Project in `htdocs`
-Place your project folder inside the XAMPP root directory:
+## Repository Structure
+
 ```text
-C:\xampp\htdocs\smart-campus
+smart-campus/
+├── db.php             # MySQL database connection configuration
+├── index.php          # Student grievance intake form & live complaint feed
+├── admin.php          # Administrator ticket management dashboard
+├── update_status.php  # Backend endpoint to handle status transitions
+├── style.css          # Clean, lightweight UI styles
+├── script.js          # Client-side input validation
+├── schema.sql         # Database and table definitions
+└── README.md          # Project documentation
