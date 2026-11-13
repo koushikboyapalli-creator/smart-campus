@@ -1,6 +1,6 @@
 # Smart Campus: Student Complaint & Maintenance Redressal Portal
 
-A lightweight, web-based complaint lodging and tracking system designed for campus hostels and department infrastructure. Students can report maintenance issues across various categories, and campus administrators can track and transition ticket resolution states in real time.
+A web-based complaint lodging and tracking system designed for campus hostels and department infrastructure. Students can report maintenance issues across various categories, and campus administrators can track and transition ticket resolution states in real time.
 
 ---
 
